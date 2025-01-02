@@ -1,5 +1,6 @@
 # get data from airtable
 
+#remotes::install_github('matthewjrogers/rairtable')
 library(rairtable)
 library(tidyverse)
 
