@@ -1,8 +1,3 @@
----
-output:
-  word_document: default
-  html_document: default
----
 # Administration for Children's Services (ACS)
 ## Accelerated Safety Analysis Protocol (ASAP) Tool
 

@@ -36,34 +36,34 @@ write_population <- function(pop_type, pop_type_ind, pop_type_oth) {
 
     "
   )
-  
+
   if (!is.na(pop_type_ind)) {
-    
+
     resp <- str_c(
       resp,
       str_glue(
         "
-        
+
 Individuals impacted include: {pop_type_ind}
 
         "
       )
     )
   }
-  
+
   if (!is.na(pop_type_oth)) {
     resp <- str_c(
       resp,
       str_glue(
         "
-        
+
 Others impacted include: {pop_type_oth}
 
         "
       )
     )
   }
-  
+
   return(resp)
 }
 
@@ -71,14 +71,14 @@ write_vendor <- function(vendor_checkbox, vendor_name, vendor_desc) {
   if(is.na(vendor_checkbox)) {
     return("")
   } else {
-    
+
     resp <- str_glue(
       "
 ### Vendor Involvement
 
 __Vendor Name__: {vendor_name}
 
-{vendor_desc}      
+{vendor_desc}
       "
     )
 
@@ -98,7 +98,7 @@ write_update <- function(updated, updated_desc) {
 
       "
     )
-    
+
     return(resp)
   }
 }
@@ -154,9 +154,9 @@ tool_template <- function(data) {
     | __Training Data__ | {data_training} |
     | __Input Data__ | {data_input} |
     | __Output Data__ | {data_output} |
-    
+
     {text_vendor}
-    
+
     {text_update}
 
     "
@@ -175,16 +175,16 @@ agency_report <- map2(
 
 agency_abbr <- pull(distinct(df_mut, agency_abbr), agency_abbr)
 
-map2(
+walk2(
   agency_report, agency_abbr,
   ~cat(.x, file = str_c("agency_draft/", .y, ".md"), append = FALSE)
 )
 
 walk2(dir_ls("agency_draft", glob="*.md"), agency_abbr,
-      ~knit2pandoc(.x, to = "docx", output = path("agency_draft", .y, ext = "docx")))
+      ~rmarkdown::render(.x, output_format = "word_document", output_dir = "agency_draft"))
 
 ## paste results into full report
 
 cat(str_c(agency_report, collapse = "\n"), file = "test_report.md", append = FALSE)
-
+rmarkdown::render("test_report.md", output_format = "html_document")
 
