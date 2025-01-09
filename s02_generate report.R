@@ -28,25 +28,14 @@ write_identifying <- function(identifying_info) {
 }
 
 write_population <- function(pop_type, pop_type_ind, pop_type_oth) {
-  resp <- str_glue(
-    "
-### Populations Impacted
-
-{pop_type}
-
-    "
-  )
+  resp <- pop_type
 
   if (!is.na(pop_type_ind)) {
 
     resp <- str_c(
       resp,
       str_glue(
-        "
-
-Individuals impacted include: {pop_type_ind}
-
-        "
+        ". Individuals impacted include: {pop_type_ind}"
       )
     )
   }
@@ -55,11 +44,7 @@ Individuals impacted include: {pop_type_ind}
     resp <- str_c(
       resp,
       str_glue(
-        "
-
-Others impacted include: {pop_type_oth}
-
-        "
+        ". Others impacted include: {pop_type_oth}"
       )
     )
   }
@@ -74,7 +59,7 @@ write_vendor <- function(vendor_checkbox, vendor_name, vendor_desc) {
 
     resp <- str_glue(
       "
-### Vendor Involvement
+### Vendor Information
 
 __Vendor Name__: {vendor_name}
 
@@ -108,9 +93,10 @@ write_update <- function(updated, updated_desc) {
 df_mut <- df_raw |>
   mutate(
     date_use = map2_chr(month_use, year_use, write_date)
-    , computation_type = replace_na(computation_type, "")
-    , updated = replace_na(updated, "")
+    , computation_type = replace_na(computation_type, "No response")
+    , updated = replace_na(updated, "No response")
     , population_type = map_chr(population_type, str_c, collapse = "; ")
+    , purpose_type = replace_na(purpose_type, "No response")
     , identifying_info = map_chr(identifying_info, write_identifying)
     , text_pop_type = pmap_chr(list(population_type, population_type_individual, population_type_other), write_population)
     , text_vendor = pmap_chr(list(vendor_checkbox, vendor_name, vendor_desc), write_vendor)
@@ -122,7 +108,8 @@ agencies <- df_mut |>
   str_glue_data("
         # {agency}
 
-        ")
+
+                      ")
 
 tool_template <- function(data) {
   str_glue_data(
@@ -130,12 +117,11 @@ tool_template <- function(data) {
     "
     ## {tool_name}
 
-    __First Used__: {date_use}
-
     | | |
     |:--|:--|
-    | __Computation Type__: {computation_type} | __Purpose Type__: {purpose_type} |
-    | __Identifying Information__: {identifying_info} | __Updated in 2024__: {updated} |
+    | __First Used__: {date_use}                | __Updated in 2024__: {updated}    |
+    | __Computation Type__: {computation_type}  | __Purpose Type__: {purpose_type}  |
+    | __Population Type__: {population_type}    | __Identifying Information__: {identifying_info} |  |
 
     ### Tool Description
 
@@ -144,8 +130,8 @@ tool_template <- function(data) {
     ### Tool Purpose
 
     {purpose_desc}
-
-    {text_pop_type}
+    
+    {text_update}
 
     ### Data Analyzed
 
@@ -156,9 +142,7 @@ tool_template <- function(data) {
     | __Output Data__ | {data_output} |
 
     {text_vendor}
-
-    {text_update}
-
+    
     "
   ) |>
     str_c(collapse = "\n")
