@@ -184,7 +184,7 @@ Individuals
 
 __Vendor Name__: Nagarro and Microsoft
 
-Developed by an IT services vendor (Nagarro) using Microsoft Cognitive services.      
+Developed by an IT services vendor (Nagarro) using Microsoft Cognitive services.
 
 
 
@@ -216,7 +216,7 @@ MySchools is an application used to house online school directories, collect app
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: Students
 
 
@@ -232,7 +232,7 @@ Individuals impacted include: Students
 
 __Vendor Name__: Blenderbox
 
-We have a five year contract with the agency Blenderbox who designed the application and implemented the algorithmic matching functionality. The work is meant to transition to be run in-house, by the Division of Instructional and Information Technology (DIIT) within the Department of Education, by the end of the contract. The team at DIIT has already begun to takeover maintenance and development of the tool.      
+We have a five year contract with the agency Blenderbox who designed the application and implemented the algorithmic matching functionality. The work is meant to transition to be run in-house, by the Division of Instructional and Information Technology (DIIT) within the Department of Education, by the end of the contract. The team at DIIT has already begun to takeover maintenance and development of the tool.
 
 ### Update Description
 
@@ -274,7 +274,7 @@ Individuals
 
 __Vendor Name__: Education Analytics
 
-Education Analytics provides technical assistance and quality assurance for the growth model.      
+Education Analytics provides technical assistance and quality assurance for the growth model.
 
 
 
@@ -346,7 +346,7 @@ Individuals
 
 __Vendor Name__: Microsoft
 
-Microsoft provided technical guidance for their emerging generative AI technology and built some small module of code for the specific NYCPS Gen AI and Teaching Assistant use cases.      
+Microsoft provided technical guidance for their emerging generative AI technology and built some small module of code for the specific NYCPS Gen AI and Teaching Assistant use cases.
 
 
 
@@ -385,7 +385,7 @@ Individuals
 
 __Vendor Name__: Acuvate
 
-Acuvate developed the AI tool that performs the automated analysis of the submitted evidence.      
+Acuvate developed the AI tool that performs the automated analysis of the submitted evidence.
 
 
 
@@ -410,9 +410,9 @@ Bowtie2 is an intermediate step in the workflow to analyze COVID variants in was
 ### Populations Impacted
 
 Individuals; Other; Biological sample
-        
+
 Individuals impacted include: Pathogens whose genomes are sequenced.
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -448,9 +448,9 @@ Burrows-Wheeler Aligner (BWA) is aligning sequence data to reference using Burro
 ### Populations Impacted
 
 Individuals; Other
-        
+
 Individuals impacted include: Individuals whose sequence data is being analyzed
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -486,7 +486,7 @@ CM is used by BOI and Healthy Homes to identify duplicate immunization and lead 
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: Individuals of all ages with a record in the CIR. 
 
 
@@ -502,7 +502,7 @@ Individuals impacted include: Individuals of all ages with a record in the CIR.
 
 __Vendor Name__: HLN Consulting
 
-A vendor was involved in the development of the program initially. CM is now available as an open-source program. The DOHMH implementation is maintained by HLN Consulting.      
+A vendor was involved in the development of the program initially. CM is now available as an open-source program. The DOHMH implementation is maintained by HLN Consulting.
 
 
 
@@ -526,9 +526,9 @@ Used to identify mutations and call upon differences from the reference; which i
 ### Populations Impacted
 
 Individuals; Other
-        
+
 Individuals impacted include: Pathogens whose genomes are sequenced
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -564,9 +564,9 @@ This is a tool designed specifically for Oxford Nanopore Technology (ONT) data. 
 ### Populations Impacted
 
 Individuals; Other; Biological sample
-        
+
 Individuals impacted include: Pathogens whose genomes are sequenced.
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -582,7 +582,7 @@ Others impacted include: Sequence data can belong to any species
 
 __Vendor Name__: Oxford Nanopore Technologies
 
-Developed and maintains the tool.      
+Developed and maintains the tool.
 
 
 
@@ -606,7 +606,7 @@ ICE is used by the Bureau of Immunization to evaluate a patient’s immunization
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: Anyone who needs a vaccine
 
 
@@ -622,7 +622,7 @@ Individuals impacted include: Anyone who needs a vaccine
 
 __Vendor Name__: HLN Consulting
 
-A vendor was involved in the development of the program and continues to be involved in program enhancements. ICE is also available as an open-source program. The DOHMH implementation is maintained by HLN Consulting.      
+A vendor was involved in the development of the program and continues to be involved in program enhancements. ICE is also available as an open-source program. The DOHMH implementation is maintained by HLN Consulting.
 
 
 
@@ -646,7 +646,7 @@ The model uses data from Yelp restaurant reviews and previously used Twitter dat
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: 1) Public who dine at NYC restaurants and are Yelp users.  2) NYC Restaurants.
 
 
@@ -663,7 +663,7 @@ Individuals impacted include: 1) Public who dine at NYC restaurants and are Yelp
 
 __Vendor Name__: Columbia University
 
-New York City Health Department staff; including Bureau of Communicable Disease; Office of Environmental Investigations; and Division of Informatics and Information Technology & Telecommunications and Columbia University are involved in making decisions about the tool. Columbia University Department of Computer Science professors and doctoral students maintain the classifier. The project was previously funded by the Alfred P Sloan Grant; for which The Fund for Public Health in New York provided administrative support and grant management to the New York City Health Department. This support and management ended at the completion of the grant in 2021.      
+New York City Health Department staff; including Bureau of Communicable Disease; Office of Environmental Investigations; and Division of Informatics and Information Technology & Telecommunications and Columbia University are involved in making decisions about the tool. Columbia University Department of Computer Science professors and doctoral students maintain the classifier. The project was previously funded by the Alfred P Sloan Grant; for which The Fund for Public Health in New York provided administrative support and grant management to the New York City Health Department. This support and management ended at the completion of the grant in 2021.
 
 
 
@@ -687,9 +687,9 @@ Produced phylogenetic trees are used to help rule in or out outbreaks of COVID o
 ### Populations Impacted
 
 Individuals; Other; Biological sample
-        
+
 Individuals impacted include: Pathogens whose genomes are sequenced.
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -725,9 +725,9 @@ Produced phylogenetic trees are used to help rule in or out outbreaks of bacteri
 ### Populations Impacted
 
 Individuals; Other; Biological sample
-        
+
 Individuals impacted include: Pathogens whose genomes are sequenced.
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -766,9 +766,9 @@ MAFFT (for Multiple Alignment using Fast Fourier Transform) includes several alg
 ### Populations Impacted
 
 Individuals; Other; Biological sample
-        
+
 Individuals impacted include: Pathogens whose genomes are sequenced.
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -804,9 +804,9 @@ Minimap2 uses optimal chaining scores to align sequencing data to reference geno
 ### Populations Impacted
 
 Individuals; Other; Biological sample
-        
+
 Individuals impacted include: Pathogens whose genomes are sequenced.
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -842,9 +842,9 @@ Pangolin uses a combination of several methods; including random forest tree; cl
 ### Populations Impacted
 
 Individuals; Other; Biological sample
-        
+
 Individuals impacted include: Pathogens whose genome is sequenced
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -883,9 +883,9 @@ Used to generate the minimum spanning tree relationships.
 ### Populations Impacted
 
 Individuals; Other; Biological sample
-        
+
 Individuals impacted include: Pathogens whose genomes are sequenced.
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -921,9 +921,9 @@ PulseNet 2.0 is used to 1) assemble the bacterial genome (since the sequencing p
 ### Populations Impacted
 
 Individuals; Other; Biological sample
-        
+
 Individuals impacted include: Pathogens in lab test samples that are sent for sequencing.
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -939,7 +939,7 @@ Others impacted include: Sequence data can belong to any species
 
 __Vendor Name__: CDC
 
-Developed and maintains the tool.      
+Developed and maintains the tool.
 
 ### Update Description
 
@@ -966,9 +966,9 @@ Spades is an intermediate step in the workflows of bacterial analyses.
 ### Populations Impacted
 
 Individuals; Other; Biological sample
-        
+
 Individuals impacted include: Pathogens whose genomes are sequenced.
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -1004,9 +1004,9 @@ Vsearch is an intermediate step in the workflow to analyze COVID variants in was
 ### Populations Impacted
 
 Individuals; Other; Biological sample
-        
+
 Individuals impacted include: Pathogens whose genomes are sequenced
-        
+
 Others impacted include: Sequence data can belong to any species
 
 
@@ -1057,7 +1057,7 @@ Individuals
 
 __Vendor Name__: Not disclosable
 
-Out-of-the-box products. The vendors provide ongoing technical assistance. Confidentiality agreements are in place with the vendors.      
+Out-of-the-box products. The vendors provide ongoing technical assistance. Confidentiality agreements are in place with the vendors.
 
 ### Update Description
 
@@ -1085,7 +1085,7 @@ The machine learning function trains the documents managed in the system to auto
 ### Populations Impacted
 
 Other
-        
+
 Others impacted include: agency documents
 
 
@@ -1101,7 +1101,7 @@ Others impacted include: agency documents
 
 __Vendor Name__: Record Point
 
-They helped us with the implementation of the module including training and support.       
+They helped us with the implementation of the module including training and support. 
 
 
 
@@ -1129,7 +1129,7 @@ The Homebase program was created to prevent households from entering the DHS she
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: Households seeking Homebase assistance
 
 
@@ -1146,7 +1146,7 @@ Individuals impacted include: Households seeking Homebase assistance
 __Vendor Name__: Multiple researchers
 
 DHS contracted with researchers to evaluate years of Homebase administrative data to develop a risk assessment. The DSS research team then led an updated analysis that led to tool revisions. The published research papers are listed below: https://ajph.aphapublications.org/doi/10.2105/AJPH.2013.301468 https://www.journals.uchicago.edu/doi/abs/10.1086/686466?mobileUi=0&journalCode=ssr
-https://www.tandfonline.com/doi/abs/10.1080/10511482.2022.2077801      
+https://www.tandfonline.com/doi/abs/10.1080/10511482.2022.2077801
 
 ### Update Description
 
@@ -1222,7 +1222,7 @@ Individuals
 
 __Vendor Name__: EveryAction and TargetSmart
 
-EveryAction and TargetSmart jointly provide the SmartVAN product. EveryAction is the software provider. TargetSmart is the data provider. TargetSmart is the entity who applies algorithmic techniques. EveryAction provides access to this data through their platform.      
+EveryAction and TargetSmart jointly provide the SmartVAN product. EveryAction is the software provider. TargetSmart is the data provider. TargetSmart is the entity who applies algorithmic techniques. EveryAction provides access to this data through their platform.
 
 ### Update Description
 
@@ -1264,7 +1264,7 @@ Geographic space
 
 __Vendor Name__: KLD Engineering , P.C
 
-KLD Engineering, P.C  is the developer of the Tool, and currently handle the maintenance contract      
+KLD Engineering, P.C  is the developer of the Tool, and currently handle the maintenance contract
 
 ### Update Description
 
@@ -1292,7 +1292,7 @@ The algorithm requires two datasets.  First, the tool requires the average numbe
 ### Populations Impacted
 
 Other
-        
+
 Others impacted include: FDNY radio and assignment dispatcher employees
 
 
@@ -1376,7 +1376,7 @@ Geographic space
 
 __Vendor Name__: Deccan International
 
-This algorithm and the resulting output file that  is used in our EMS CAD system to suggest atom order for unit search is currently provided by a vendor, Deccan International.      
+This algorithm and the resulting output file that  is used in our EMS CAD system to suggest atom order for unit search is currently provided by a vendor, Deccan International.
 
 
 
@@ -1400,7 +1400,7 @@ ALARM is a combined approach using machine learning and risk ratios to assess th
 ### Populations Impacted
 
 Property; Other
-        
+
 Others impacted include: Civilian Fire Injuries/Fatalities
 
 
@@ -1440,7 +1440,7 @@ NYC Media uses Adobe Photoshop to make slight edits to some images that appear i
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: Viewers who watch the City's television channels; some individuals who appear in MOME's television content
 
 
@@ -1456,7 +1456,7 @@ Individuals impacted include: Viewers who watch the City's television channels; 
 
 __Vendor Name__: Adobe
 
-Adobe regularly updates the Photoshop software      
+Adobe regularly updates the Photoshop software
 
 
 
@@ -1480,7 +1480,7 @@ We use AI-powered tools to help a human editor generate closed captions of some 
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: Individuals who watch content on NYC Media's television channels; individuals who speak in content on NYC Media's television channels
 
 
@@ -1496,7 +1496,7 @@ Individuals impacted include: Individuals who watch content on NYC Media's telev
 
 __Vendor Name__: Adobe
 
-Adobe provides regular software updates      
+Adobe provides regular software updates
 
 
 
@@ -1520,7 +1520,7 @@ The tool provided a transcript of a meeting which was then reviewed by ENDGBV st
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: Participants in the meeting might provide their name and business affiliations. 
 
 
@@ -1536,7 +1536,7 @@ Individuals impacted include: Participants in the meeting might provide their na
 
 __Vendor Name__: Microsoft 
 
-Microsoft provides this tool as part of Teams.      
+Microsoft provides this tool as part of Teams.
 
 
 
@@ -1560,7 +1560,7 @@ MOME is using the AppTek Omni 300 closed captioning appliance to provide closed 
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: People who watch live City Council and mayoral content televised on NYC Gov and other content televised on NYC World; people who appear in the content that is televised.
 
 
@@ -1576,7 +1576,7 @@ Individuals impacted include: People who watch live City Council and mayoral con
 
 __Vendor Name__: AppTek
 
-AppTek provides support for the Omni 300 closed captioning system      
+AppTek provides support for the Omni 300 closed captioning system
 
 
 
@@ -1636,7 +1636,7 @@ The tool was used to generate audio recordings of mayor’s voice delivering hir
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: phone call recipients
 
 
@@ -1652,7 +1652,7 @@ Individuals impacted include: phone call recipients
 
 __Vendor Name__: ElevenLabs
 
-Utilized two existing features offered by ElevenLabs (VoiceLab and Speech Synthesis).      
+Utilized two existing features offered by ElevenLabs (VoiceLab and Speech Synthesis).
 
 
 
@@ -1729,7 +1729,7 @@ Geographic space
 
 __Vendor Name__: Legacy Mayor’s Office of the Chief Technology Officer
 
-The sampling algorithm was developed by the former Mayor’s Office of the Chief Technology Officer in partnership with the Mayor’s Office of Operations.      
+The sampling algorithm was developed by the former Mayor’s Office of the Chief Technology Officer in partnership with the Mayor’s Office of Operations.
 
 ### Update Description
 
@@ -1759,7 +1759,7 @@ The group selected by StratifySelect will be invited to participate in the CEC's
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: New York City residents (all boroughs)
 
 
@@ -1795,7 +1795,7 @@ MOME uses Zoom for public hearings on rulemaking and for public webinars. We use
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: People who participate in rulemaking hearings and webinars; people who read transcripts of those hearings and webinars
 
 
@@ -1811,7 +1811,7 @@ Individuals impacted include: People who participate in rulemaking hearings and 
 
 __Vendor Name__: Zoom
 
-Regular updates to the application      
+Regular updates to the application
 
 
 
@@ -1837,7 +1837,7 @@ Electromagnetic weapons detection devices emit ultra-low frequency, electromagne
 ### Populations Impacted
 
 Individuals; Property; Geographic space
-        
+
 Individuals impacted include: General Population
 
 
@@ -1854,7 +1854,7 @@ Individuals impacted include: General Population
 
 __Vendor Name__: EVOLV
 
-Software developed and maintained by vendor      
+Software developed and maintained by vendor
 
 
 
@@ -1878,7 +1878,7 @@ Facial recognition is a digital technology that NYPD uses to compare images obta
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: General Population
 
 
@@ -1894,7 +1894,7 @@ Individuals impacted include: General Population
 
 __Vendor Name__: Dataworks
 
-Software developed and maintained by vendor      
+Software developed and maintained by vendor
 
 
 
@@ -1919,7 +1919,7 @@ Patternizr compares features of crimes and finds ones that are similar and may b
 ### Populations Impacted
 
 Individuals; Property; Geographic space; Other
-        
+
 Others impacted include: Crime classification
 
 
@@ -1969,7 +1969,7 @@ Geographic space
 
 __Vendor Name__: Shotspotter
 
-Software developed and maintained by vendor      
+Software developed and maintained by vendor
 
 ### Update Description
 
@@ -2011,7 +2011,7 @@ Individuals; Biological sample
 
 __Vendor Name__: NicheVision Forensics, LLC
 
-The software has been developed by New Zealand Crown Institute of Environmental Science and Research (ESR) with Forensic Science South Australia. The developer assisted OCME in analyzing and interpreting our data during the validation of the software.      
+The software has been developed by New Zealand Crown Institute of Environmental Science and Research (ESR) with Forensic Science South Australia. The developer assisted OCME in analyzing and interpreting our data during the validation of the software.
 
 
 
@@ -2050,7 +2050,7 @@ Individuals
 
 __Vendor Name__: Microsoft, Nuance
 
-Microsoft provided an LLM-powered solution to aid in handling customers who call 311 for information and services. The focus was handling voice interactions.      
+Microsoft provided an LLM-powered solution to aid in handling customers who call 311 for information and services. The focus was handling voice interactions.
 
 
 
@@ -2088,7 +2088,7 @@ Individuals; Group, organization, or business
 
 __Vendor Name__: Microsoft, EY
 
-Microsoft provides Cloud-based ChatGPT services, and EY is the professional services vendor.      
+Microsoft provides Cloud-based ChatGPT services, and EY is the professional services vendor.
 
 ### Update Description
 
@@ -2115,7 +2115,7 @@ The algorithmic tool converts the customer's text inquiry in their chosen langua
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: Customers who contact 311 via text/SMS 
 
 
@@ -2131,7 +2131,7 @@ Individuals impacted include: Customers who contact 311 via text/SMS
 
 __Vendor Name__: Microsoft
 
-Omnichannel is part of the Microsoft suite available to OTI as part of the Dynamics CRM platform. Microsoft supported the design, development, and testing of the tool preparation and deployment.       
+Omnichannel is part of the Microsoft suite available to OTI as part of the Dynamics CRM platform. Microsoft supported the design, development, and testing of the tool preparation and deployment. 
 
 
 
@@ -2155,7 +2155,7 @@ Captions are provided to attendees of Zoom meetings held by the NYC Open Data te
 ### Populations Impacted
 
 Individuals
-        
+
 Individuals impacted include: Attendees of Open Data Week and Open Data Ambassadors meetings who have spoken during the meeting or whose names have been mentioned during the meeting.
 
 
@@ -2171,7 +2171,7 @@ Individuals impacted include: Attendees of Open Data Week and Open Data Ambassad
 
 __Vendor Name__: BetaNYC
 
-BetaNYC is our collaborator on the Open Data Week and Open Data Ambassador initiatives. They own and operate the Zoom account that is used for meetings under these initiatives, have access to the transcription files, and use these when editing and uploading video recordings onto YouTube.      
+BetaNYC is our collaborator on the Open Data Week and Open Data Ambassador initiatives. They own and operate the Zoom account that is used for meetings under these initiatives, have access to the transcription files, and use these when editing and uploading video recordings onto YouTube.
 
 
 
@@ -2212,7 +2212,7 @@ Individuals; Group, organization, or business
 
 __Vendor Name__: GitHub, a subsidiary of Microsoft
 
-n/a      
+n/a
 
 
 
