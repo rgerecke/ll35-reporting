@@ -3,6 +3,7 @@
 library(tidyverse)
 library(fs)
 library(knitr)
+library(rmarkdown)
 
 ## data --------
 
@@ -31,22 +32,11 @@ write_population <- function(pop_type, pop_type_ind, pop_type_oth) {
   resp <- pop_type
 
   if (!is.na(pop_type_ind)) {
-
-    resp <- str_c(
-      resp,
-      str_glue(
-        ". Individuals impacted include: {pop_type_ind}"
-      )
-    )
+    resp <- str_replace(resp, "Individuals", str_glue("Individuals ({pop_type_ind})"))
   }
 
   if (!is.na(pop_type_oth)) {
-    resp <- str_c(
-      resp,
-      str_glue(
-        ". Others impacted include: {pop_type_oth}"
-      )
-    )
+    resp <- str_replace(resp, "Other", str_glue("Other ({pop_type_oth})"))
   }
 
   return(resp)
@@ -93,10 +83,11 @@ write_update <- function(updated, updated_desc) {
 df_mut <- df_raw |>
   mutate(
     date_use = map2_chr(month_use, year_use, write_date)
-    , computation_type = replace_na(computation_type, "No response")
-    , updated = replace_na(updated, "No response")
+    , department = replace_na(department, "Not specified")
+    , computation_type = replace_na(computation_type, "Not specified")
+    , updated = replace_na(updated, "Not specified")
     , population_type = map_chr(population_type, str_c, collapse = "; ")
-    , purpose_type = replace_na(purpose_type, "No response")
+    , purpose_type = replace_na(purpose_type, "Not specified")
     , identifying_info = map_chr(identifying_info, write_identifying)
     , text_pop_type = pmap_chr(list(population_type, population_type_individual, population_type_other), write_population)
     , text_vendor = pmap_chr(list(vendor_checkbox, vendor_name, vendor_desc), write_vendor)
@@ -119,9 +110,10 @@ tool_template <- function(data) {
 
     | | |
     |:--|:--|
+    | __Department__: {department}              |                                   |
     | __First Used__: {date_use}                | __Updated in 2024__: {updated}    |
     | __Computation Type__: {computation_type}  | __Purpose Type__: {purpose_type}  |
-    | __Population Type__: {population_type}    | __Identifying Information__: {identifying_info} |  |
+    | __Population Type__: {text_pop_type}      | __Identifying Information__: {identifying_info} |  |
 
     ### Tool Description
 
@@ -165,10 +157,10 @@ walk2(
 )
 
 walk2(dir_ls("agency_draft", glob="*.md"), agency_abbr,
-      ~rmarkdown::render(.x, output_format = "word_document", output_dir = "agency_draft"))
+      ~render(.x, output_format = "word_document", output_dir = "agency_draft"))
 
 ## paste results into full report
 
-cat(str_c(agency_report, collapse = "\n"), file = "test_report.md", append = FALSE)
-rmarkdown::render("test_report.md", output_format = "html_document")
+cat(str_c(agency_report, collapse = "\n"), file = str_glue("test_report_{today()}.md"), append = FALSE)
+render(str_glue("test_report_{today()}.md"), output_format = "html_document")
 
