@@ -159,8 +159,27 @@ walk2(
 walk2(dir_ls("agency_draft", glob="*.md"), agency_abbr,
       ~render(.x, output_format = "word_document", output_dir = "agency_draft"))
 
-## paste results into full report
+## yaml ------
 
-cat(str_c(agency_report, collapse = "\n"), file = str_glue("test_report_{today()}.md"), append = FALSE)
-render(str_glue("test_report_{today()}.md"), output_format = "html_document")
+yaml <- "---
+title: 'Local Law 35 Reporting'
+author: 'renata gerecke'
+output:
+  html_document:
+    toc: true
+    toc_depth: 1
+---
+"
+
+## paste results into full report -----
+
+cat(
+  str_c(yaml, str_c(agency_report, collapse = "\n"), sep = "\n"), 
+  file = str_glue("test_report_{today()}.md"), 
+  append = FALSE
+)
+
+render(
+  str_glue("test_report_{today()}.md")
+  )
 
