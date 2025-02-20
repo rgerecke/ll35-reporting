@@ -165,7 +165,8 @@ yaml <- "---
 title: 'Local Law 35 Reporting'
 author: 'renata gerecke'
 output:
-  html_document:
+  pdf_document:
+    fontsize: 11pt
     toc: true
     toc_depth: 1
 ---
