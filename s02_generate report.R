@@ -108,9 +108,10 @@ tool_template <- function(data) {
     "
     ## {tool_name}
 
+    __Department__: {department}
+
     | | |
     |:--|:--|
-    | __Department__: {department}              |                                   |
     | __First Used__: {date_use}                | __Updated in 2024__: {updated}    |
     | __Computation Type__: {computation_type}  | __Purpose Type__: {purpose_type}  |
     | __Population Type__: {text_pop_type}      | __Identifying Information__: {identifying_info} |  |
@@ -122,7 +123,7 @@ tool_template <- function(data) {
     ### Tool Purpose
 
     {purpose_desc}
-    
+
     {text_update}
 
     ### Data Analyzed
@@ -134,7 +135,7 @@ tool_template <- function(data) {
     | __Output Data__ | {data_output} |
 
     {text_vendor}
-    
+
     "
   ) |>
     str_c(collapse = "\n")
@@ -165,8 +166,7 @@ yaml <- "---
 title: 'Local Law 35 Reporting'
 author: 'renata gerecke'
 output:
-  pdf_document:
-    fontsize: 11pt
+  word_document:
     toc: true
     toc_depth: 1
 ---
@@ -175,8 +175,8 @@ output:
 ## paste results into full report -----
 
 cat(
-  str_c(yaml, str_c(agency_report, collapse = "\n"), sep = "\n"), 
-  file = str_glue("test_report_{today()}.md"), 
+  str_c(yaml, str_c(agency_report, collapse = "\n"), sep = "\n"),
+  file = str_glue("test_report_{today()}.md"),
   append = FALSE
 )
 
