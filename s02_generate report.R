@@ -7,7 +7,7 @@ library(rmarkdown)
 
 ## data --------
 
-df_raw <- read_rds("data/df_for_reporting.rds")
+df_raw <- read_rds(str_glue("data/df_for_reporting_{today()}.rds"))
 
 
 ## functions ------
@@ -135,6 +135,8 @@ tool_template <- function(data) {
     | __Output Data__ | {data_output} |
 
     {text_vendor}
+    
+    ---
 
     "
   ) |>
@@ -180,7 +182,5 @@ cat(
   append = FALSE
 )
 
-render(
-  str_glue("test_report_{today()}.md")
-  )
+render(str_glue("test_report_{today()}.md"))
 
