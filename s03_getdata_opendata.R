@@ -4,7 +4,7 @@
 library(rairtable)
 library(tidyverse)
 
-set_airtable_api_key(Sys.getenv("AIRTABLE_API_KEY"))
+set_airtable_api_key(Sys.getenv("AIRTABLE_KEY"))
 
 get_ll35_data <- function () {
   tool_fields <- c(
