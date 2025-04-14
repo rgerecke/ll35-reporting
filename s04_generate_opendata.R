@@ -111,4 +111,5 @@ df_mut <- df_raw |>
 
 df_all <- bind_rows(df_mut, df_history_mut)
 
-write_csv(df_all, str_glue("data/csv_for_opendata_{today()}.csv"))
+# `write_excel_csv` function prevents character encoding issues in excel
+write_excel_csv(df_all, str_glue("data/csv_for_opendata_{today()}.csv"), )
